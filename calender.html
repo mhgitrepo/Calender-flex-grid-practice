@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender(using Flex, Grid)</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .container ul{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 10px;
+        }
+        li{
+            list-style: none;
+            font-size: 3em;
+            background-color: cadetblue;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: .5px solid cadetblue;
+           border-radius: 5px;
+        }
+        .month_before_after{
+            background-color: azure;
+        }
+        .li_round{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s ease-in-out;
+        }
+        .li_round:hover{
+            background-color: #0f6265;
+            color: whitesmoke;
+        }
+        .week_day{
+            font-size: 2em;
+            background-image: linear-gradient(45deg, #0f6265, cadetblue);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="week_day"><span>Thursday</span></li>
+            <li class="week_day"><span>Friday</span></li>
+            <li class="week_day"><span>Saturday</span></li>
+            <li class="week_day"><span>Sunday</span></li>
+            <li class="week_day"><span>Monday</span></li>
+            <li class="week_day"><span>Tuesday</span></li>
+            <li class="week_day"><span>Wednesday</span></li>
+            <li class="month_before_after"><span class="li_round">30</span></li>
+            <li class="month_before_after"><span class="li_round">31</span></li>
+            <li><span class="li_round">1</span></li>
+            <li><span class="li_round">2</span></li>
+            <li><span class="li_round">3</span></li>
+            <li><span class="li_round">4</span></li>
+            <li><span class="li_round">5</span></li>
+            <li><span class="li_round">6</span></li>
+            <li><span class="li_round">7</span></li>
+            <li><span class="li_round">8</span></li>
+            <li><span class="li_round">9</span></li>
+            <li><span class="li_round">10</span></li>
+            <li><span class="li_round">11</span></li>
+            <li><span class="li_round">12</span></li>
+            <li><span class="li_round">13</span></li>
+            <li><span class="li_round">14</span></li>
+            <li><span class="li_round">15</span></li>
+            <li><span class="li_round">16</span></li>
+            <li><span class="li_round">17</span></li>
+            <li><span class="li_round">18</span></li>
+            <li><span class="li_round">19</span></li>
+            <li><span class="li_round">20</span></li>
+            <li><span class="li_round">21</span></li>
+            <li><span class="li_round">22</span></li>
+            <li><span class="li_round">23</span></li>
+            <li><span class="li_round">24</span></li>
+            <li><span class="li_round">25</span></li>
+            <li><span class="li_round">26</span></li>
+            <li><span class="li_round">27</span></li>
+            <li><span class="li_round">28</span></li>
+            <li><span class="li_round">29</span></li>
+            <li><span class="li_round">30</span></li>
+            <li class="month_before_after"><span class="li_round">01</span></li>
+            <li class="month_before_after"><span class="li_round">02</span></li>
+            <li class="month_before_after"><span class="li_round">03</span></li>
+        </ul>
+    </div>
+</body>
+</html>
